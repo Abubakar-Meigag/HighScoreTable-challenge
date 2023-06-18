@@ -1,5 +1,33 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+#root {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #415a77;
+  text-align: center;
+  align-items: center;
+}
+h1{
+  color: #edf2f4;
+}
+.table{
+  width: 100%;
+  background-color: #2b2d42;
+  color: #edf2f4;
+}
+th {
+  background-color: #8d99ae;
+  color: #f1faee;
+}
+
+.table,th,td {
+  margin: 20px;
+  border: 1px solid;
+  /* border-collapse: collapse; */
+  border-bottom: 1px solid #090909;
 }
 
 .App-logo {
@@ -32,6 +60,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

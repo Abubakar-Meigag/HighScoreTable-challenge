@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import React from "react";
+import AllScores from "./allScores";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1> test PR for highScores</h1>
+      <h1>High Scores pre Country</h1>
+      <AllScores />
     </div>
   );
 }
