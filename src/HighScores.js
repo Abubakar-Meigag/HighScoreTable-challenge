@@ -8,7 +8,7 @@ const HighScores = () => {
             b.s - a.s
         ))
     ))
-    
+
     return data.map((el, index) => (
         <div key={index}>
             <table className="table">
@@ -19,8 +19,10 @@ const HighScores = () => {
                 </thead>
                     {el.scores.map((e, key) => (
                     <tbody key={key}>
-                        <td>{e.n} </td>
-                        <td> {parseFloat(e.s)}</td>
+                        <tr>
+                            <td>{e.n} </td>
+                            <td> {parseFloat(e.s)}</td>
+                        </tr>
                     </tbody>
                     ))}
             </table>
