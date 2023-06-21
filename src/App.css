@@ -17,6 +17,9 @@ h1{
   width: 100%;
   background-color: #2b2d42;
   color: #edf2f4;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
 }
 th {
   background-color: #8d99ae;
@@ -28,6 +31,17 @@ th {
   border: 1px solid;
   /* border-collapse: collapse; */
   border-bottom: 1px solid #090909;
+}
+
+.sort-scores{
+  cursor: pointer;
+  background-color: #2b2d42;
+  color: #f1faee;
+  width: 120px;
+  height: 35px;
+  font-size:medium;
+  font-style:italic;
+  font-weight: bolder;
 }
 
 .App-logo {
