@@ -1,13 +1,7 @@
 import allCountryScores from "./scores";
 
 const HighScores = () => {
-    const data = allCountryScores; 
-
-    data.map((ele) => (
-        ele.scores.sort((a, b) => (
-            b.s - a.s
-        ))
-    ))
+    const data = allCountryScores;
 
     return data.map((el, index) => (
         <div key={index}>
