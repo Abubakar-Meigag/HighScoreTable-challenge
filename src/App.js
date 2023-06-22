@@ -12,7 +12,7 @@ function App() {
     setSortToggler(!sortToggler);
     setData((data) => {
       const newData = data;
-      newData.map((ele) => {
+      newData.forEach((ele) => {
         return ele.scores.sort((a, b) => {
           if (sortToggler) {
             return a.s - b.s;
