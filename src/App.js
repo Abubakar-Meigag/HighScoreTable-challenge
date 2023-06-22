@@ -12,7 +12,7 @@ function App() {
     setSortToggler(!sortToggler);
     setData((data) => {
       const newData = data;
-      newData.forEach((ele) => {
+      newData.map((ele) => {
         return ele.scores.sort((a, b) => {
           if (sortToggler) {
             return a.s - b.s;
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <h1>High Scores pre Country</h1>
       <TopButton handleClick={sortTable} />
-      <AllScores />
+      <AllScores data={data} />
     </div>
   );
 }
